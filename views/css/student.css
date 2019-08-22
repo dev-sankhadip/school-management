@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #B8B9B9;
+}
+*{box-sizing: border-box; padding: 0; margin: 0;}
+
+
+
+body::-webkit-scrollbar{
+    
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track{
+    
+    background-color:white;
+    box-shadow: inset 0px 0px 5px grey;
+}
+
+body::-webkit-scrollbar-thumb{
+    
+    background-color: #DE0740;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+/* webpage design*/
+
+#webpage{
+    
+    width: 80%;
+    margin: 0px auto;
+    height: 650px;
+    background-color: white;
+    
+}
+#head{
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px solid black;
+
+}
+#student-photo{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    float: left;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin: 20px;
+
+}
+#student-some-info{
+    
+    width: 350px;
+    height: 150px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+    padding: 10px;
+    
+}
+
+#head-id,#head-name,#batch{
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#nav-con{
+    
+    width: 57%;
+    height: 130px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+    
+
+#student-info, #student-marks, #student-attendance, #student-leave, #student-fees{
+    
+    width: 120px;
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 27px;
+    background-color: #A2C7FE;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#student-info:hover{
+    background-color: #FE5593;
+    color: white;
+} 
+#student-marks:hover{
+    background-color: #FE5593;
+      color: white;
+}
+#student-attendance:hover{
+    background-color: #FE5593;
+      color: white;
+}
+#student-leave:hover{
+    background-color: #FE5593;
+      color: white;
+}
+#student-fees:hover{
+    background-color: #FE5593;
+      color: white;
+}
+
+#section{
+    width: 100%;
+    height: 700px;
+    float: left;
+}
+#msg-heading{
+    width: 100%;
+    height: 50px;
+    background-color: #616060;
+    color: white;
+    padding: 5px;
+}
+#message-con{
+    
+    width: 250px;
+    height: 350px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 4px grey;
+    float: left;
+}
+
+#timetable-heading{
+     width: 100%;
+    height: 50px;
+    background-color: #616060;
+    color: white;
+    padding: 5px;
+}
+
+
+#time-table-con
+{
+    width:70%;
+    height: 350px;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 4px grey;
+    
+}
+
+
+#info-con{
+    width: 56%;
+    height: 350px;
+    position: absolute;
+    left: 30.5%;
+    top: 45.5%;
+    background-color: white;
+    border: 1px solid #1abc9c;
+    box-shadow: 0px 0px 4px #1abc9c;
+   display: none;
+    
+}
+
+#info-heading{
+     width: 100%;
+    height: 50px;
+    background-color: #929710;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#marks-con{
+    width: 56%;
+    height: 350px;
+    position: absolute;
+    left: 30.5%;
+    top: 45.5%;
+    background-color: white;
+    border: 1px solid blue;
+    box-shadow: 0px 0px 4px blue;
+    display: none;
+    
+}
+
+#marks-heading{
+     width: 100%;
+    height: 50px;
+    background-color: #9B6E06;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+#marks{
+    width: 300px;
+    height: 220px;
+    margin: 10px auto;
+     border-collapse:collapse;
+    padding: 2px;
+}
+td{
+    text-align: center;
+}
+
+#attendance-con{
+    width: 56%;
+    height: 350px;
+    position: absolute;
+    left: 30.5%;
+    top: 45.5%;
+    background-color: white;
+    border: 1px solid #DE1947;
+    box-shadow: 0px 0px 4px #DE1947;
+    display: none;
+    
+}
+
+#attendance-heading{
+     width: 100%;
+    height: 50px;
+    background-color: #9B6E06;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#attendance{
+    width: 300px;
+    height: 220px;
+    margin: 10px auto;
+     border-collapse:collapse;
+    padding: 2px;
+}
+td{
+    text-align: center;
+}
+
+#leave-con{
+    width: 56%;
+    height: 350px;
+    position: absolute;
+    left: 30.5%;
+    top: 45.5%;
+    background-color: white;
+    border: 1px solid #DE1947;
+    box-shadow: 0px 0px 4px #DE1947;
+    display: none;
+    
+}
+
+#leave-heading{
+     width: 100%;
+    height: 50px;
+    background-color:#0DA831;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#form{
+    
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+#from{width: 200px;height: 30px; outline: none;}
+#to{width: 200px;height: 30px; outline: none;}
+#apply-btn{width: 100px; height: 50px; outline: none; background-color: #B9B8B8; cursor: pointer; font-size: 20px; border: none;}
+
+#fees-con{
+    width: 56%;
+    height: 350px;
+    position: absolute;
+    left: 30.5%;
+    top: 45.5%;
+    background-color: white;
+    border: 1px solid #0DA831;
+    box-shadow: 0px 0px 4px #0DA831;
+    
+    display: none;
+}
+
+#fees-heading{
+     width: 100%;
+    height: 50px;
+    background-color:#EF3C36;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+

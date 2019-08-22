@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en-US">
+            <% include partials/head %>
+        <style>
+            #div
+            {
+                width: 800px;
+                height: 600px;
+                border: 10px solid white;
+                border-radius: 5px;
+                position: absolute;
+                top: 10%;
+                left: 20%;
+                display: none;
+            }
+            #cut
+            {
+                font-size: 30px;
+                position: absolute;
+                top: 6.3%;
+                left: 74%;
+                display: none;
+                color: white;
+            }
+            .img
+            {
+                border: 4px solid white;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body bgcolor="grey">
+        <div style="width:100%;height:100%;" id="total">
+                <% image.forEach(function(item){ %>
+                    <img src="<%= item.image %>" width="200px" height="200px" class="img">
+                <% }); %>
+        </div>
+        <div id="box">
+            <i class="fa fa-compress" aria-hidden="true" id="cut"></i>
+            <div id="div">
+        </div>
+
+        </div>
+        <script>
+            var div=document.getElementById("div");
+            window.onload=function()
+            {
+                var img=document.getElementsByClassName("img");
+                var cut=document.getElementById("cut");
+               img[0].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.transition="1s";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[0].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[1].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[1].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[2].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[2].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[3].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[3].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[4].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[4].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[5].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[5].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[6].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[6].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                img[7].onclick=function()
+                {
+                    div.className="animated zoomIn";
+                    div.style.display="block";
+                    cut.style.display="block";
+                    div.style.backgroundImage="url("+img[7].src+")";
+                    div.style.backgroundSize="cover";
+                    div.style.backgroundRepeat="no-repeat";
+                    document.getElementById("total").style.filter="blur(3px)";
+                }
+                cut.onclick=function()
+                {
+                    div.className="animated fadeOut";
+                    div.style.display="none";
+                    cut.style.display="none";
+                    document.getElementById("total").style.filter="blur(0px)";
+                }
+            }
+        </script>
+    </body>
+</html>

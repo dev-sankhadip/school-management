@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0 maximum-scale=1.0; user-scalable=0;">
+	<link rel="stylesheet" href="animate/animate.css">
+    <link rel="stylesheet" href="css/student.css">
+    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Righteous" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script> 
+          window.jQuery || document.write("<script src='js/jquery.js'><\/script>"); 
+    </script>
+	<title>Student</title>
+    <noscript>
+        <h1>ACM Chapter request you to enable your javascript......</h1>
+        <style>
+        
+            body{
+                background-color: black;
+            }
+            
+            h1{color: white; font-size: 80px;}
+    
+            #webpage{display: none;}
+        </style>
+        
+    </noscript>
+    </head>
+<body>
+    <div id="logo-con" style="width: 80%;height: 100px; margin:20px auto; background-color: white;"><div style="padding: 5px; width: 350px;height: 100px;float: left;"><h1 style="padding: 0; margin:0;">Welcome to SMC</h1></div><div id="logo" style="float: left;height: 100px; width:100px; border: 1px solid #ddd; border-top-left-radius: 50px;border-top-right-radius: 50px;border-bottom-left-radius:50px; border-bottom-right-radius:50px; margin-left: :30%; background-image: url(images/book.jpg);background-size: cover;"></div></div>     
+<div id="webpage">  
+    <header id="head">
+    <div id="student-photo"style="background-image: url(images/book.jpg);background-size: cover;"></div>
+    <div id="student-some-info">
+        <div>
+            <span id="head-id">ID : </span><span id="student-id"></span><br><br>
+        <span id="head-name">Name : </span><span id="student-name"></span><br><br>
+        <span id="batch">Batch : </span><span id="student-batch"></span>   
+        </div>
+    </div>
+        <nav id="nav-con">
+            <button id="student-info">Information</button>
+            <button id="student-marks"> Marks</button>
+            <button id="student-attendance">Attendance</button>
+            <button id="student-leave">Apply Leave</button>
+            <button id="student-fees">Fees</button>
+        </nav>
+    </header>
+    
+    <section id="section">
+        <div id="message-con"><div id="msg-heading"><h1>Message for you ! </h1></div><span id="message"></span></div>
+        <div id="time-table-con"><div id="timetable-heading"><h1>Time Table for you ! </h1></div><div style="width: 100%; height: 300px; background-image: url(images/timetable.png); background-size: cover;"></div></div>
+
+        <div id="info-con"><div id="info-heading">Your Information</div>
+            <br><h4>ID : </h4><span id="st-id"></span><br>
+            <h4>Name : </h4><span id="st-name"></span><br>
+            <h4>Batch : </h4><span id="st-batch"></span><br>
+            <h4>Mobile : </h4><span id="st-mobile"></span><br>
+            <h4>Parents : </h4><span id="p-name"></span><br>
+            <h4>Mobile : </h4><span id="p-mobile"></span>
+        </div>
+        <div id="marks-con"><div id="marks-heading">Marks Information</div>
+        <table id="marks" border="1px">
+                <tr><th>Subject</th><th>ST1</th><th>ST2</th><th>ST3</th><th>Final</th></tr>
+                <tr><td>Java</td><td id="java1"></td><td id="java2"></td><td id="java3"></td><td id="javaf"></td></tr>
+                <tr><td>DBMS</td><td id="dbms1"></td><td id="dbms2"></td><td id="dbms3"></td><td id="dbmsf"></td></tr>
+                <tr><td>SE</td><td id="se1"></td><td id="se2"></td><td id="se3"></td><td id="sef"></td></tr>
+                <tr><td>CST</td><td id="cst1"></td><td id="cst2"></td><td id="cst3"></td><td id="cstf"></td></tr>
+                <tr><td>HUL</td><td id="hul1"></td><td id="hul2"></td><td id="hul2"></td><td id="hulf"></td></tr>
+            </table>
+        
+        </div>
+        <div id="attendance-con"><div id="attendance-heading">Attendance Information</div>
+            <table id="attendance" border="1px">
+                <tr><th>Subject</th><th>Attendance</th></tr>
+                <tr><td>Java</td><td id="java"></td></tr>
+                <tr><td>DBMS</td><td id="dbms"></td></tr>
+                <tr><td>SE</td><td id="se"></td></tr>
+                <tr><td>CST</td><td id="cst"></td></tr>
+                <tr><td>HUL</td><td id="hul"></td></tr>
+            </table>
+        </div>
+        <div id="leave-con"><div id="leave-heading">Leave Information</div>
+            <form id="form">
+                From : <input type="date" id="from"><br><br>
+                To : <input type="date" id="to"><br><br>
+                Reason: <br><textarea id="reason" cols="30" rows="5"></textarea><br><br>
+                <button id="apply-btn">Apply</button><h3 style="padding: 0" id="apply-res"></h3>
+            </form>
+        </div>
+        <div id="fees-con"><div id="fees-heading">Fees Information</div><span id="fees"></span></div>
+    </section>
+</div>
+<script src="js/student.js"></script>
+</body>
+</html>
